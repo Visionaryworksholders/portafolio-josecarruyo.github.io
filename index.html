@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -93,27 +95,36 @@
 	<!-- End Main Header -->
 	
 	<!-- Banner One -->
-	<section class="banner-one" style="background-image:url(assets/images/background/1.jpg)">
-		<div class="robot">
-			<script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.5/build/spline-viewer.js"></script>
-			<spline-viewer url="https://prod.spline.design/AqtlWJlNbO-ZMkvz/scene.splinecode"></spline-viewer>
-		</div>
-		<div class="auto-container">
-			<!-- Content Column -->
-			<div class="banner-one_content">
-				<div class="banner-one_content-inner">
-					<h1 class="banner-one_heading">Creative <br> Space</h1>
-					<div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
-						<div class="banner-one_text">Our visionary team crafts <br> transformative experiences</div>
-						<div class="banner-one_text-two">Enhancing potential and <br> driving prosperity.</div>
-					</div>
-				</div>
-			</div>
-			<div class="down-box scroll-to-target" data-target=".gallery-one">
-				<img src="assets/images/main-slider/down.png" alt="" />
-			</div>
-		</div>
-	</section>
+<section class="banner-one">
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="assets/images/Adijump.mp4" type="video/mp4" />
+    Tu navegador no soporta el video HTML5.
+  </video>
+
+  <!-- Contenedor principal encima del video -->
+  <div class="banner-overlay">
+    <!-- Texto y contenido -->
+    <div class="auto-container">
+      <div class="banner-one_content">
+        <div class="banner-one_content-inner">
+          <h1 class="banner-one_heading">José Carruyo<br>Game & Web Developer</h1>
+          <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+            <div class="banner-one_text">I design and develop interactive games<br>that captivate and inspire</div>
+            <div class="banner-one_text-two">Building websites and IT solutions<br>that empower digital growth</div>
+          </div>
+        </div>
+      </div>
+      <div class="down-box scroll-to-target" data-target=".gallery-one">
+        <img src="assets/images/main-slider/down.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 	<!-- End Banner One -->
 
 	<!-- Services One -->
@@ -126,45 +137,45 @@
 			</div>
 			<div class="row clearfix">
 				
-				<!-- Service Block One -->
-				<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
-					<div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
-						<h3 class="service-block_one-heading">Mobile App <br> Development</h3>
-						<div class="service-block_one-icon">
-							<img src="assets/images/icons/service-1.png" alt="" />
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block One -->
-				<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
-					<div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
-						<h3 class="service-block_one-heading">Video Production & <br> Editing</h3>
-						<div class="service-block_one-icon">
-							<img src="assets/images/icons/service-2.png" alt="" />
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block One -->
-				<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
-					<div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
-						<h3 class="service-block_one-heading">Print & Graphic <br> Design</h3>
-						<div class="service-block_one-icon">
-							<img src="assets/images/icons/service-3.png" alt="" />
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block One -->
-				<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
-					<div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
-						<h3 class="service-block_one-heading">Strategic Branding <br> Services</h3>
-						<div class="service-block_one-icon">
-							<img src="assets/images/icons/service-4.png" alt="" />
-						</div>
-					</div>
-				</div>
+<!-- Gestor de Proyectos -->
+<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
+  <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
+    <h3 class="service-block_one-heading">Gestión de <br> Proyectos</h3>
+    <div class="service-block_one-icon">
+      <i class="bi bi-kanban" style="font-size: 2rem; color: white;"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Desarrollo de Videojuegos 2D -->
+<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
+  <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
+    <h3 class="service-block_one-heading">Videojuegos <br> 2D</h3>
+    <div class="service-block_one-icon">
+      <i class="bi bi-controller" style="font-size: 2rem; color: white;"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Programación Web -->
+<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
+  <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
+    <h3 class="service-block_one-heading">Programación <br> Web</h3>
+    <div class="service-block_one-icon">
+      <i class="bi bi-code-slash" style="font-size: 2rem; color: white;"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Diseño UI/UX en Figma -->
+<div class="service-block_one col-lg-6 col-md-6 col-sm-12">
+  <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
+    <h3 class="service-block_one-heading">Diseño UI/UX <br> en Figma</h3>
+    <div class="service-block_one-icon">
+      <i class="bi bi-palette" style="font-size: 2rem; color: white;"></i>
+    </div>
+  </div>
+</div>
 				
 			</div>
 		</div>
@@ -184,7 +195,7 @@
 								<a href="single-work.html"><img src="assets/images/gallery/1.jpg" alt="" /></a>
 							</div>
 							<div class="gallery-block_one-title">branding</div>
-							<h4 class="gallery-block_one-heading"><a href="single-work.html">Glossy</a></h4>
+							<h4 class="gallery-block_one-heading"><a href="single-work.html">Addijump videogame</a></h4>
 						</div>
 						<div class="service-block_one-more">
 							<a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
